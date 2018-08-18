@@ -4,7 +4,7 @@ Cinematic camera path generator for Minecraft 1.13
 Places the player in a smooth linear path. In combination with the built in cinematic camera, this can be used to create trailers.
 
 ## Installation
-1. Download the latest datapack and resource pack [here](https://github.com/misode/PathGenerator/releases)
+1. Download the latest datapack [here](https://github.com/misode/PathGenerator/releases)
 2. Place the zipped datapack in `/(world name)/datapacks/`
 3. `/reload` your world
 
