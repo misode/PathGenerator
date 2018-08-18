@@ -1,7 +1,7 @@
 # PathGenerator
 Cinematic camera path generator for Minecraft 1.13
 
-Places the player in a smooth linear path. In combination with the built in cinematic camera, this can be used to create trailers.
+Places the player in a smooth linear path. In combination with the built in cinematic camera, this can be used to create trailers. Each creative player can make and start their own path.
 
 ## Installation
 1. Download the latest datapack [here](https://github.com/misode/PathGenerator/releases)
@@ -15,10 +15,7 @@ Places the player in a smooth linear path. In combination with the built in cine
 5. Right click the red particle to start the path. Turn on cinematic camera to get smooth camera rotations
 6. Sneak to stop the path
 
-## Limitations
-1. Only one path can be active at the same time
-
 ## Technical
-When the player clicks the carrot on a stick, a llama gets teleported with its `path_x`, `path_y` and `path_z` scores set according to the direction the player was facing. When the player mounts the llama, it gets the `started` tag. When the llama has that tag, its `Motion` is constantly updated to match the scores. When the player dismounts the llama, it gets killed. The reason it's using a llama is because they're the only rideable entity that can be made completely invisible without a resource pack and is controlled by the server
+When the player clicks the carrot on a stick, a llama gets teleported with its `path_x`, `path_y` and `path_z` scores set according to the direction the player was facing. It also gets an id score to save which player created the path. When the player mounts the llama, it gets the `started` tag. When the llama has that tag, its `Motion` is constantly updated to match the scores. When the player dismounts the llama, it gets killed. The reason it's using a llama is because they are the only rideable entity that can be made completely invisible without a resource pack and is controlled by the server.
 
 The datapack uses the following objectives: `path`, `path_click`, `path_x`, `path_y`, `path_z`
