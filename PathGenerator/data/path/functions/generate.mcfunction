@@ -12,7 +12,9 @@ scoreboard players operation @s path_z *= speed path
 scoreboard players operation @e[tag=path] path_x = @s path_x
 scoreboard players operation @e[tag=path] path_y = @s path_y
 scoreboard players operation @e[tag=path] path_z = @s path_z
-tp @s ^ ^-1.7 ^-2
+tp @s ^ ^ ^-2
+execute at @s run tp @s ~ ~-1.7 ~
+execute at @s anchored eyes run tp @s ~ ~ ~ facing entity @e[tag=path,limit=1]
 #execute anchored eyes run tp @e[tag=path] ^ ^ ^2
 #data merge entity @e[tag=path,limit=1] {Air:0}
 #data merge entity @e[tag=path,limit=1] {Air:1}
