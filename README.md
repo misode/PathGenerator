@@ -19,6 +19,6 @@ Places the player in a smooth linear path. In combination with the built in cine
 1. Only one path can be active at the same time
 
 ## Technical
-When the player clicks the carrot on a stick, a minecart gets teleported with its `path_x`, `path_y` and `path_z` scores set according to the direction the player was facing. When the player enters the minecart it gets the `started` tag. When the minecart has that tag, its `Motion` is constantly updated to match the scores. When the player exits the minecart it gets killed.
+When the player clicks the carrot on a stick, a llama gets teleported with its `path_x`, `path_y` and `path_z` scores set according to the direction the player was facing. When the player mounts the llama, it gets the `started` tag. When the llama has that tag, its `Motion` is constantly updated to match the scores. When the player dismounts the llama, it gets killed. The reason it's using a llama is because they're the only rideable entity that can be made completely invisible without a resource pack and is controlled by the server
 
 The datapack uses the following objectives: `path`, `path_click`, `path_x`, `path_y`, `path_z`
