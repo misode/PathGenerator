@@ -32,4 +32,4 @@ summon area_effect_cloud ~ ~ ~ {Tags:["path_display"]}
 execute store result entity @e[tag=path_display,limit=1] Pos[0] double 0.001 run scoreboard players get path_t path_x
 execute store result entity @e[tag=path_display,limit=1] Pos[1] double 0.001 run scoreboard players get path_t path_y
 execute store result entity @e[tag=path_display,limit=1] Pos[2] double 0.001 run scoreboard players get path_t path_z
-execute at @e[tag=path_display] run particle end_rod ~ ~ ~
+execute at @e[tag=path_display] run particle end_rod ~ ~ ~ 0 0 0 0 1 normal @a[tag=!disable_path]
