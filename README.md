@@ -18,6 +18,6 @@ Cinematic camera path generator for Minecraft 1.13
 ## Technical
 In the source code, `/PathGenerator` is the old linear path tracer, while `CubicPathGenerator` is the default version which is the one in the latest release. If you want to use the old version, uses release versions `1.x`. 
 
-When the player clicks the carrot on a stick, a llama gets teleported with its `path_x`, `path_y` and `path_z` scores set according to the direction the player was facing. It also gets an id score to save which player created the path. When the player mounts the llama, it gets the `started` tag. When the llama has that tag, its `Motion` is constantly updated to match the scores. When the player dismounts the llama, it gets killed. The reason it's using a llama is because they are the only rideable entity that can be made completely invisible without a resource pack and is controlled by the server.
+All path points are area effect clouds and have the `path_marker` tag. When the player clicks the start tool, a llama gets summoned with the `path` tag at the player. When the player mounts the llama, it gets the `started` tag. When the llama has that tag, its `Motion` is constantly updated using a cubic interpolation method. When the player dismounts the llama or the path ends, it gets killed. The reason it's using a llama is because they are the only rideable entity that can be made completely invisible without a resource pack and is controlled by the server.
 
-The datapack uses the following objectives: `path`, `path_click`, `path_x`, `path_y`, `path_z` and `math`
+The datapack uses the following objectives: `path`, `path_click`, `path_x`, `path_y`, `path_z` and `math`.
