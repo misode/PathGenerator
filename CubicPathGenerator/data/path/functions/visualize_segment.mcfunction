@@ -1,5 +1,5 @@
 
-scoreboard players operation marker math = @s path
+scoreboard players operation marker path = @s path
 
 tag @e[tag=path_marker] remove path_marker_0
 tag @e[tag=path_marker] remove path_marker_1

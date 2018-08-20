@@ -12,4 +12,4 @@ scoreboard players set #1000 math 1000
 #time=2000 => dmu=1000/(2*20)=1000/40=25 => 40 ticks -> 2 seconds
 #time=3000 => dmu=1000/(20*3000) => 60 ticks -> 3 seconds
 execute unless score time path matches 0.. run scoreboard players set time path 2000
-execute unless score markers math matches 0.. run scoreboard players set markers math 0
+execute unless score markers path matches 0.. run scoreboard players set markers path 0
