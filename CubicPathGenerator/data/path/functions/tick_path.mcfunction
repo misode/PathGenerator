@@ -1,6 +1,6 @@
 
 function path:get_pos
-scoreboard players remove @s path_y 1700
+scoreboard players add @s path_y 2500
 
 tag @e[tag=path_marker] remove path_marker_0
 tag @e[tag=path_marker] remove path_marker_1
