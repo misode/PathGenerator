@@ -8,7 +8,7 @@ Cinematic camera path generator for Minecraft 1.13
 
 ## How to use
 1. Run `/function path:give` to get the path tools. There is an "add point", "start path" and "clear points".
-2. Run `/scoreboard players set time path <number>` to set the time between each path point in miniseconds (default is 2000)
+2. Run `/scoreboard players set time path <number>` to set the time between each path point in miliseconds (default is 2000)
 3. Right click the "add point" tool to add a point to the path. A number in the actionbar tell how many points are now on the path.
 4. When holding the "add point" tool, aqua particles indicate the path points, and white particles show the smooth path in between them
 5. Right click the "start path" tool to initialize the path and right click the red particle to start the path. Turn on cinematic camera to get smooth camera rotations
